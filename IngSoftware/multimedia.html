@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Tutorial Zamo</title>
+
+</head>
+<body>
+  <!--Barra de navegación-->
+  <nav>
+    <div class="nav-wrapper black">
+      <a href="index.html" class="brand-logo"><img src="img/est-log.png" alt="Logo FI" width="80px" height="90px"></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li ><a href="inicio.html">Inicio</a></li>
+        <li><a href="teoria.html">Teoría</a></li>
+        <li class="active"><a href="#">Multimedia</a></li>
+        <li><a href="cuestionario.html">Cuestionario</a></li>
+        <li><a href="bibliografia.html">Bibliografía</a></li>
+      </ul>
+      <ul class="side-nav ham" id="mobile-demo">
+        <li ><a href="index.html">Inicio</a></li>
+        <li><a href="teoria.html">Teoría</a></li>
+        <li class="active"><a href="#">Multimedia</a></li>
+        <li><a href="cuestionario.html">Cuestionario</a></li>
+        <li><a href="bibliografia.html">Bibliografía</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--Fin barra de navegación-->
+<!--Info página-->
+<main>
+ <div class="row">  
+    <div class="col s12 m10 offset-m1">
+    <center>
+      <h3> Ve el video tutorial</h3>
+      <video class="responsiva" controls>
+        <source src="src/vidprueba.mp4" type="video/mp4">
+      </video>
+
+      <h3>¡También escúchalo!</h3>
+      <audio class="responsiva" controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+      </audio>
+      <br><br>
+    </center>
+    </div> 
+ </div>
+
+  </main>
+  <!--Termina info página-->
+
+  <!--Footer adhesivo-->
+  <footer class="page-footer black ffooter">
+    <div class="container ">
+      <div class="footer-copyright center black">
+        <div class="container">
+          © Ingeniería de Software 2017-2
+        </div>
+      </div>
+    </footer>
+    <!--Termina footer-->
+  </body>
+  <script src="js/jquery-3.2.1.js"></script>  
+  <script src="js/materialize.js"></script>
+  <script src="js/app.js"></script>
+  </html>
