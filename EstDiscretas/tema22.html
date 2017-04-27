@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Delius" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Magra" rel="stylesheet">
+  <title>Tutorial Zamo</title>
+
+</head>
+<body>
+<!--Barra de navegación-->
+  <nav>
+    <div class="nav-wrapper black">
+        <a href="index.html" class="brand-logo"><img src="img/est-log.png" alt="Logo FI" width="80px" height="90px"></a>
+      <a href="index.html" data-activates="mobile-demo" ></a>
+            
+    </div>
+  </nav>
+<!--Fin barra de navegación-->
+<!--Info página-->
+<main class="texto"> 
+<div class="container">
+<div class="justificar">
+  <h2>2.6.6 Principio de Pigeonhole</h2>
+<p>
+El principio del palomar(Pigeonhole, también conocido como el principio de la pichonera, principio
+de la cajonera de Dirichlet o el principio de la caja de zapatos) suele ser útil al responder
+la pregunta: ¿Hay un elemento que tiene una propiedad dada? Cuando se aplica con éxito
+el principio del palomar, sólo indica que existe el objeto; el principio no dice cómo encontrar
+el objeto ni cuántos objetos hay. <br>
+La primera versión del principio del palomar que se estudiará asegura que si n palomas
+vuelan y entran a k palomares y k < n, algunos palomares contendrán al menos dos palomas
+(figura 6.8.1). La razón por la que esta afirmación es cierta se aprecia mediante un
+argumento por contradicción. Si la conclusión es falsa, cada palomar contiene cuando mucho
+una paloma y, en este caso, se puede rendir cuenta de cuando mucho k palomas. Como
+hay n palomas y n > k, se tiene una contradicción. <br>
+</p>
+<center>
+  <img src="img/pal1.png" alt="Principo de palomar">
+</center>  
+<h4>Principio de palomar, primera forma</h4>
+<p>
+Si n palomas vuelan a los palomares y k < n, algunos palomares contienen al menos
+dos palomas.
+</p>
+<p>Se observa que el principio del palomar no establece cómo localizar el hoyo que contiene
+dos palomas o más. Sólo asegura la existencia de un hoyo con dos palomas o más.
+Para aplicar el principio del palomar, debemos decidir qué objetos tendrán el papel
+de palomas y qué objetos tendrán el papel de palomares. El primer ejemplo ilustra una posibilidad. <br>
+Diez personas tienen nombres de pila Alicia, Bernardo y Carlos y apellidos López, Maza y
+Noriega. Demuestre que al menos dos personas tienen el mismo nombre y apellido. <br>
+Existen nueve nombres posibles para las 10 personas. Si se piensa en las personas como
+palomas y en los nombres como los palomares, se puede considerar que la asignación
+de nombres a personas es lo mismo que asignar palomares a las palomas. Por el principio
+del palomar, algún nombre (palomar) se asigna al menos a dos personas (palomas).</p>
+<h4>Principio de palomar, segunda forma</h4>
+<p>
+Si f es una función de un conjunto finito X a un conjunto finito Y y |X| > |Y|, entonces
+f(x1
+) = f(x2
+) para alguna x1
+, x2 ∈ X, x1 diferente de x2.
+</p>
+<p>La segunda forma del principio del palomar se reduce a la primera forma si X se define
+como el conjunto de palomas y Y el conjunto de palomares. Se asigna la paloma x al
+hoyo f(x). Por la primera forma del principio del palomar, al menos dos palomas, x1
+, x2 ∈
+X, se asignan al mismo palomar; es decir, f(x1
+) = f(x2
+) para alguna x1
+, x2 ∈ X, x1 diferente de x2
+.
+Los siguientes ejemplos ilustran la aplicación de la segunda forma del principio del
+palomar.</p>
+</div>
+<div class="row center">
+  <div class="col s12 m6">
+    <a  href="tema21.html" class="waves-effect waves-light btn-large red darken-1"><i class="material-icons left">fast_rewind</i>Regresar al tema anterior</a>
+  </div>
+  <div class="col s12 m6">
+    <a  href="tema23.html" class="waves-effect waves-light btn-large red darken-1"><i class="material-icons left">fast_forward</i>Ir al siguiente tema</a>  
+  </div>
+</div>
+</div>
+</main>
+<!--Termina info página-->
+
+<!--Footer adhesivo-->
+        <footer class="page-footer black ffooter">
+          <div class="container ">
+          <div class="footer-copyright center black">
+            <div class="container">
+            © Ingeniería de Software 2017-2
+            </div>
+          </div>
+        </footer>
+<!--Termina footer-->
+</body>
+  <script src="js/jquery-3.2.1.js"></script>  
+  <script src="js/materialize.js"></script>
+    <script src="js/app.js"></script>
+</html>

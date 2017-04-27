@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Delius" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Magra" rel="stylesheet">
   <title>Tutorial Zamo</title>
 
 </head>
@@ -21,67 +22,141 @@
   </nav>
 <!--Fin barra de navegación-->
 <!--Info página-->
-<main>
-<!--TARJETAS-->
-  <div class="row tarjetas">
-    <div class="col s12 m6">
-      <div class="card ">
-        <div class="card-image">
-          <img src="img/req.jpg">
-          <span class="card-title tituloTarjeta">Clasificación de requerimentos</span>
-          <a href="tema21.html" class="btn-floating halfway-fab waves-effect waves-light red btn-large"><i class="material-icons">add</i></a>
-        </div>
-        <div class="card-content">
-        
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-        </div>
-      </div>
-    </div>
+<main class="texto"> 
+<div class="container">
+<div class="justificar">
+	<h2>3.2.1 CLASIFICACIÓN DE REQUERIMENTOS</h2>
+		
+	<p><span class="centrar">INTRODUCCIÓN</span><br>
+Un requerimiento es una característica que debe tener el sistema o una restricción que debe
+satisfacer para que sea aceptado por el cliente. La ingeniería de requerimientos pretende definir
+los requerimientos del sistema que se está construyendo. La ingeniería de requerimientos incluye
+dos actividades principales: la obtención de los requerimientos, que da como resultado una especificación
+del sistema que el cliente comprende, y el análisis, que da como resultado un modelo
+de análisis que los desarrolladores pueden interpretar sin ambigüedad. La obtención de requerimientos
+es la más retadora de las dos, debido a que requiere la colaboración de varios grupos de
+participantes con diferentes niveles de conocimientos. Por un lado, el cliente y los usuarios son
+expertos en sus dominios y tienen una idea general de lo que debe hacer el sistema. Sin embargo,
+a menudo tienen muy poca experiencia en el desarrollo de software. Por otro lado, los desarrolladores
+tienen experiencia en la construcción de sistemas, pero con frecuencia tienen muy poco
+conocimiento del ambiente diario de los usuarios.
+	</p>
+	<p>Los requerimientos de los sistemas de información pueden ser divididos
+en dos clasificaciones básicas:</p>
+<p><center><span class="titulo">Requerimientos funcionales</span></center><br>
+Definen las capacidades que deberá tener el sistema que se va a
+desarrollar, describiendo los procesos que llevan a la transformación de
+las entradas del sistema para obtener las salidas deseadas (lo que el
+software debe o no hacer).
+A su vez, los requerimientos funcionales se clasifican en:</p>
+<p><span>Requerimientos de datos o información.</span><br>Estos requerimientos hacen
+referencia al contenido o tipo de información que manejará el sistema.
+El objetivo de los requerimientos de datos es responder a la pregunta
+¿qué información debe almacenar y administrar el sistema? Por
+ejemplo, el sistema debe almacenar la dirección completa de los
+trabajadores de la empresa. <br>
+<span>Requerimientos de interfaz (con el usuario).</span><br> Son los requerimientos que
+buscan determinar la forma en cómo los usuarios van a interactuar con
+el sistema. El objetivo de definir los requerimientos de interfaz es
+responder a la pregunta ¿cómo va a interactuar el usuario con el
+sistema? Por ejemplo, el sistema debe contener una pantalla donde los usuarios escriban su nombre y contraseña para poder ingresar a su
+contenido.
+<br><span>Requerimientos de navegación.</span><br> Estos requerimientos están para a
+determinar la forma en que los usuarios van a navegar o a desplazarse
+dentro del sistema entre las diferentes secciones que lo componen. Por
+ejemplo, el sistema debe contener una pantalla de menú principal que
+permita el acceso a los diversos módulos que conforman al sistema.
+<br><span>Requerimientos de personalización. </span><br>A través de los requerimientos de
+personalización se busca describir la forma en que el sistema deberá
+adaptarse a los diferentes tipos de usuario que interactuarán con él. Por
+ejemplo, los usuarios serán clasificados de acuerdo con su categoría
+dentro de la empresa y acorde con ella podrán tener acceso a todos los
+módulos del sistema o solo a algunos de ellos.
+<br><span>Requerimientos transaccionales o funcionales internos. </span><br>Son los
+requerimientos que buscan definir la funcionalidad interna del sistema,
+excluyendo los aspectos de interacción. Po ejemplo, el sistema deberá
+generar un reporte de actividades de los usuarios diariamente (se
+define el formato del reporte).</p>
+<p><center><span class="titulo centrar">Requerimientos no funcionales</span> </center><br>Definen las posibles causas o características que son limitantes del
+sistema; como por ejemplo el rendimiento del sistema, la disponibilidad
+de equipos, etc. Sommerville indica que los requerimientos no
+funcionales, como su nombre sugiere, son aquellos requerimientos que
+no se refieren directamente a las funciones específicas que proporciona
+el sistema, sino que están orientados más hacia las necesidades que
+surgen del usuario</p>
+<p>Para definir los requerimientos no funcionales los desarrolladores se
+basan en el estándar ISO/IEC 9126, ahora englobado en el proyecto
+SQuaRE para el desarrollo de la norma ISO 25000, que define un
+modelo independiente de la tecnología para caracterizar la calidad de
+software y considera las siguientes características:
+Funcionalidad. Define las diferentes características que son necesarias
+para alcanzar el funcionamiento deseado del sistema, entre estas
+características podemos encontrar la interoperabilidad con los usuarios
+y la seguridad del sistema. <br>
+<span>Confiabilidad.</span><br> Se refiere a la capacidad del sistema para mantener sus
+niveles de rendimiento bajo ciertas condiciones específicas y en un
+tiempo de respuesta dado. Entre los requerimientos de confiabilidad
+encontramos la tolerancia a las fallas y la capacidad de recuperación
+del sistema. <br>
+<span>Amabilidad (o algunas veces llamada usabilidad). </span><br> Describe el nivel de
+complejidad que puede encontrar el usuario final para poder utilizar el
+sistema, entre estos requerimientos encontramos la curva de
+aprendizaje, la eficacia y la eficiencia de los usuarios. <br> 
+<span>Eficiencia.</span> <br>Son las características que definen la diferencia entre el
+rendimiento del sistema y la cantidad de recursos que éste consume
+durante su funcionamiento, entre estos se encuentran la cantidad de
+memoria RAM empleada, el tiempo de respuesta, la cantidad de
+procesos en el sistema operativo y los recursos de red empelados. <br>
+<span>Capacidad de mantenimiento. </span> <br>Se refiere a la capacidad del sistema
+para aceptar cambios dentro de su estructura sin perder funcionalidad,
+dentro de estos aspectos se encuentran la estabilidad y las validaciones
+de los diferentes módulos del sistema. <br>
+<span>Compatibilidad.</span><br> Es la capacidad del sistema de ser instalado en
+diferentes plataformas operativas sin presentar cambios en su
+funcionamiento como por ejemplo: adaptabilidad, capacidad de
+instalación. <br>
+<span>Portabilidad. </span><br> Capacidad del software de ser transferido de un entorno a
+otro. <br>
+<span>Productividad. </span><br>Capacidad del software de permitir a los usuarios gastar
+la cantidad apropiada de recursos en relación con la efectividad
+obtenida. <br>
+<span>Seguridad. </span><br>Capacidad del software para cumplir con los niveles de
+riesgo permitidos tanto para posibles daños físicos como para posibles
+riesgos de datos. <br> 
+<span>Satisfacción.</span><br> Capacidad del software de cumplir con las expectativas de
+los usuarios en un contexto determinado. <br>
+Los requerimientos no funcionales pueden catalogarse en tres
+categorías principales: <br><br>
+<span>Requerimiento del producto. </span><br>Enfocados a las características que define
+la forma de comportarse del producto, en este caso el sistema de
+información. Entre ellos podemos encontrar por ejemplo, la rapidez del sistema, la cantidad de memoria empleada, el espacio de
+almacenamiento en disco duro, etc. <br>
+<span>Requerimientos organizacionales. </span> <br>Estos requerimientos se enfocan
+principalmente en la observancia de las políticas y procedimientos de la
+organización, así como de las de los desarrolladores. <br>
+<span>Requerimientos externos.</span><br> Incluye a todos los factores externos del
+sistema y del proceso de desarrollo, como por ejemplo la
+interoperabilidad, es decir, la forma como el sistema interactuaría con
+otros sistemas, los legislativos, que se enfocan en el acatamiento de las
+leyes vigentes como por ejemplo derechos de autor, propiedad
+intelectual, etc. <br>
+La siguiente figura 1.2. muestra de forma general los tipos de
+requerimientos no funcionales de acuerdo con Ian Sommerville: <br>
+<center>		
+<img src="img/tipoReq.png" alt="Tipos de requerimentos" class="responsiva">
+</center>
 
-        <div class="col s12 m6">
-      <div class="card ">
-        <div class="card-image">
-          <img src="img/req.jpg">
-          <span class="card-title">Análisis de requerimentos y procesos</span>
-          <a href="tema22.hmtl" class="btn-floating halfway-fab waves-effect waves-light red btn-large"><i class="material-icons">add</i></a>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-        </div>
-      </div>
-    </div>
-  <div class="row">
-    <div class="col s12 m6">
-      <div class="card ">
-        <div class="card-image">
-          <img src="img/req.jpg">
-          <span class="card-title">Documentación de requerimentos y procesos</span>
-          <a href="tema23.hmtl" class="btn-floating halfway-fab waves-effect waves-light red btn-large"><i class="material-icons">add</i></a>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-        </div>
-      </div>
-    </div>
-
-        <div class="col s12 m6">
-      <div class="card ">
-        <div class="card-image">
-          <img src="img/req.jpg">
-          <span class="card-title">Gestión de la toma de requerimentos</span>
-          <a href="tema24.hmtl" class="btn-floating halfway-fab waves-effect waves-light red btn-large"><i class="material-icons">add</i></a>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-        </div>
-      </div>
-    </div>
-
-
-  </div>
-
-  </div>
-
+</p>
+</div>
+<div class="row center">
+	<div class="col s12 m6">
+		<a  href="teoria.html" class="waves-effect waves-light btn-large red darken-1"><i class="material-icons left">fast_rewind</i>Regresar a teoría</a>
+	</div>
+	<div class="col s12 m6">
+		<a  href="tema22.html" class="waves-effect waves-light btn-large red darken-1"><i class="material-icons right">fast_forward</i>Ir al siguiente tema</a>	
+	</div>
+</div>
+</div>
 </main>
 <!--Termina info página-->
 

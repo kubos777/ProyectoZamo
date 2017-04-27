@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Delius" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Magra" rel="stylesheet">
   <title>Tutorial Zamo</title>
 
 </head>
@@ -15,87 +16,100 @@
   <nav>
     <div class="nav-wrapper black">
         <a href="index.html" class="brand-logo"><img src="img/est-log.png" alt="Logo FI" width="80px" height="90px"></a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="index.html" data-activates="mobile-demo" ></a>
             
-        <ul class="right hide-on-med-and-down">
-        <li ><a href="inicio.html">Inicio</a></li>
-        <li class="active"><a href="#">Teoría</a></li>
-        <li><a href="multimedia.html">Multimedia</a></li>
-        <li><a href="cuestionario.html">Cuestionario</a></li>
-        <li><a href="bibliografia.html">Bibliografía</a></li>
-      </ul>
-      <ul class="side-nav ham" id="mobile-demo">
-        <li><a href="inicio.html">Inicio</a></li>
-        <li  class="active"><a href="#">Teoría</a></li>
-        <li><a href="multimedia.html">Multimedia</a></li>
-        <li><a href="cuestionario.html">Cuestionario</a></li>
-        <li><a href="bibliografia.html">Bibliografía</a></li>
-      </ul>
-    </div>
     </div>
   </nav>
 <!--Fin barra de navegación-->
 <!--Info página-->
-<main>
-<!--TARJETAS-->
-  <div class="row tarjetas">
-    <div class="col s12 m6">
-      <div class="card ">
-        <div class="card-image">
-          <img src="img/req.jpg">
-          <span class="card-title tituloTarjeta">Clasificación de requerimentos</span>
-          <a href="tema21.html" class="btn-floating halfway-fab waves-effect waves-light red btn-large"><i class="material-icons">add</i></a>
-        </div>
-        <div class="card-content">
-          <p >I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-        </div>
-      </div>
-    </div>
+<main class="texto"> 
+<div class="container">
+<div class="justificar">
+  <h2>3.2.4 GESTIÓN DE LA TOMA DE REQUERIMENTOS</h2>
+  <span>Gestión de requerimentos</span> <br>
+<p>La gestión de requerimientos es el proceso de comprender y controlar los cambios en los
+requerimientos del sistema.<br>
+En la práctica, en casi todos los sistemas los requerimientos cambian. Las personas
+involucradas desarrollan una mejor comprensión de lo que quieren que haga el software; la
+organización que compra el sistema cambia; se hacen modificaciones a los sistemas de
+hardware, software y al entorno organizacional. El proceso de organizar y llevar a cabo los
+cambios en los requerimientos se llama gestión de requerimientos. <br>
+ El objetivo del analista es reconocer los elementos básicos de un sistema tal como lo
+percibe el usuario/cliente. El analista debe establecer contacto con el equipo técnico y de
+gestión del usuario/cliente y con la empresa que vaya a desarrollar el software. El gestor del
+programa puede servir como coordinador para facilitar el establecimiento de los caminos de
+comunicación. <br>
+ Una vez que un sistema se ha instalado, inevitablemente surgen nuevos requerimientos.
+Es difícil para los usuarios y clientes del sistema anticipar qué efectos tendrá el sistema
+nuevo en la organización. Cuando los usuarios finales tienen experiencia con un sistema,
+descubren nuevas necesidades y prioridades. <br>
+ Las personas que pagan por el sistema y los usuarios de éste, rara vez son la misma
+persona. Los clientes del sistema imponen requerimientos debido a las restricciones
+organizacionales y de presupuesto. Éstos pueden estar en conflicto con los requerimientos
+de los usuarios finales y, después de la entrega, pueden tener que añadirse nuevas
+características de apoyo al usuario para que el sistema cumpla con sus objetivos. <br>
+ Otro motivo por el que cambian los requerimientos es que en ocasiones el entorno de
+negocios y técnico del sistema cambian después de la instalación. Puede ser que se
+introduzca un nuevo hardware, o puede ser que surja la necesidad de que el sistema
+interactúe con otros sistemas. También cambian las prioridades del negocio, las
+legislaciones y las regulaciones, y esto debe estar reflejado en sistema.</p>
+<p>Es necesario mantenerse al tanto de los requerimientos particulares y mantener vínculos
+entre los requerimientos dependientes de forma que se pueda evaluar el impacto de los
+cambios en los requerimientos. El proceso de gestión de requerimientos debe empezar
+cuando esté disponible una versión preliminar del documento de requerimientos. Hay que
+establecer un proceso formal para implantar las propuestas de cambios y planear como se
+van a gestionar los requerimientos que cambian durante el proceso de obtención de
+requerimientos. <br>
+En la siguiente figura se muestra como se tiene una mejor comprensión de las necesidades de
+los usuarios conforme se va desarrollando la definición de los requerimientos. Esta nueva
+comprensión retroalimenta al usuario, quien puede proponer entonces un cambio en los
+requerimientos. <br>
+<center>
+  <img src="img/gestReq.png" alt="Evolución de los requerimentos">
+</center>  
+Desde una perspectiva evolutiva, los requerimientos se dividen en dos clases: <br>
+<ol> 
+<li>Requerimientos duraderos. Son los relativamente estables, están relacionados
+directamente con la actividad principal de la organización.</li>
+<li>Requerimientos volátiles. Cambian durante el proceso de desarrollo o después
+de que éste se haya puesto en funcionamiento.</li>
+</ol>
+ En la figura siguiente se observa que la gestión del cambio en los requerimientos se debe aplicar a todos los
+cambios propuestos en los requerimientos. La ventaja de utilizar un proceso formal para
+gestionar el cambio es que todos los cambios propuestos son tratados de forma consistente
+y que los cambios en el documento de requerimientos se hacen de forma controlada.
+<center>
+  <img src="img/cambReq.png" alt="Gestión de cambio de requerimentos">
+</center>
+El proceso empieza con la identificación de un problema en los requerimientos o, algunas
+veces con una propuesta específica de cambio, dicha propuesta o el problema, se analiza
+para verificar que sea válido. Después se valora el efecto del cambio propuesto para calcular su costo. Este costo se estima tomando en cuenta las modificaciones al documento
+de requerimientos, y si es el caso, al diseño e implementación del sistema. Al finalizar esta
+etapa se toma una decisión sobre si se continúa con el cambio de requerimientos. En caso
+afirmativo, se lleva a cabo la implantación del cambio. <br>
+ El documento de requerimientos debe organizarse haciendo sus secciones tan modulares
+como sea posible, de tal modo que se puedan hacer cambios en él sin tener que hacer
+grandes reorganizaciones o redactar nuevamente gran cantidad del mismo. Así se podrán
+cambiar o reemplazar secciones individuales sin afectar a otras partes del documento. <br>
+ Algunas veces pasa que se requiere de forma urgente un cambio en los requerimientos.
+Entonces surge la tentación de hacer ese cambio directamente en el sistema y luego
+modificar de forma retrospectiva el documento de requerimientos. Esto conduce casi
+inevitablemente a que la especificación de requerimientos y la implementación del sistema
+se desfasen. Una vez que se han hecho los cambios en el sistema, los del documento de
+requerimientos se pueden olvidar o se hacen de forma que no concuerdan con los cambios
+del sistema.
+</p>
 
-        <div class="col s12 m6">
-      <div class="card ">
-        <div class="card-image">
-          <img src="img/req.jpg">
-          <span class="card-title">Análisis de requerimentos y procesos</span>
-          <a href="tema22.hmtl" class="btn-floating halfway-fab waves-effect waves-light red btn-large"><i class="material-icons">add</i></a>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-        </div>
-      </div>
-    </div>
-  <div class="row">
-    <div class="col s12 m6">
-      <div class="card ">
-        <div class="card-image">
-          <img src="img/req.jpg">
-          <span class="card-title">Documentación de requerimentos y procesos</span>
-          <a href="tema23.hmtl" class="btn-floating halfway-fab waves-effect waves-light red btn-large"><i class="material-icons">add</i></a>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-        </div>
-      </div>
-    </div>
-
-        <div class="col s12 m6">
-      <div class="card ">
-        <div class="card-image">
-          <img src="img/req.jpg">
-          <span class="card-title">Gestión de la toma de requerimentos</span>
-          <a href="tema24.hmtl" class="btn-floating halfway-fab waves-effect waves-light red btn-large"><i class="material-icons">add</i></a>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-        </div>
-      </div>
-    </div>
-
-
+</div>
+<div class="row center">
+  <div class="col s12 m6">
+    <a  href="tema23.html" class="waves-effect waves-light btn-large red darken-1"><i class="material-icons left">fast_rewind</i>Regresar al tema anterior</a>
   </div>
-
+  <div class="col s12 m6">
+    <a  href="teoria.html" class="waves-effect waves-light btn-large red darken-1"><i class="material-icons left">fast_forward</i>Ir a teoría</a>  
   </div>
-
+</div>
+</div>
 </main>
 <!--Termina info página-->
 

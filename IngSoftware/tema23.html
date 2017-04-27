@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Delius" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Magra" rel="stylesheet">
   <title>Tutorial Zamo</title>
 
 </head>
@@ -15,87 +16,65 @@
   <nav>
     <div class="nav-wrapper black">
         <a href="index.html" class="brand-logo"><img src="img/est-log.png" alt="Logo FI" width="80px" height="90px"></a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="index.html" data-activates="mobile-demo" ></a>
             
-        <ul class="right hide-on-med-and-down">
-        <li ><a href="inicio.html">Inicio</a></li>
-        <li class="active"><a href="#">Teoría</a></li>
-        <li><a href="multimedia.html">Multimedia</a></li>
-        <li><a href="cuestionario.html">Cuestionario</a></li>
-        <li><a href="bibliografia.html">Bibliografía</a></li>
-      </ul>
-      <ul class="side-nav ham" id="mobile-demo">
-        <li><a href="inicio.html">Inicio</a></li>
-        <li  class="active"><a href="#">Teoría</a></li>
-        <li><a href="multimedia.html">Multimedia</a></li>
-        <li><a href="cuestionario.html">Cuestionario</a></li>
-        <li><a href="bibliografia.html">Bibliografía</a></li>
-      </ul>
-    </div>
     </div>
   </nav>
 <!--Fin barra de navegación-->
 <!--Info página-->
-<main>
-<!--TARJETAS-->
-  <div class="row tarjetas">
-    <div class="col s12 m6">
-      <div class="card ">
-        <div class="card-image">
-          <img src="img/req.jpg">
-          <span class="card-title tituloTarjeta">Clasificación de requerimentos</span>
-          <a href="tema21.html" class="btn-floating halfway-fab waves-effect waves-light red btn-large"><i class="material-icons">add</i></a>
-        </div>
-        <div class="card-content">
-          <p >I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-        </div>
-      </div>
-    </div>
-
-        <div class="col s12 m6">
-      <div class="card ">
-        <div class="card-image">
-          <img src="img/req.jpg">
-          <span class="card-title">Análisis de requerimentos y procesos</span>
-          <a href="tema22.hmtl" class="btn-floating halfway-fab waves-effect waves-light red btn-large"><i class="material-icons">add</i></a>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-        </div>
-      </div>
-    </div>
-  <div class="row">
-    <div class="col s12 m6">
-      <div class="card ">
-        <div class="card-image">
-          <img src="img/req.jpg">
-          <span class="card-title">Documentación de requerimentos y procesos</span>
-          <a href="tema23.hmtl" class="btn-floating halfway-fab waves-effect waves-light red btn-large"><i class="material-icons">add</i></a>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-        </div>
-      </div>
-    </div>
-
-        <div class="col s12 m6">
-      <div class="card ">
-        <div class="card-image">
-          <img src="img/req.jpg">
-          <span class="card-title">Gestión de la toma de requerimentos</span>
-          <a href="tema24.hmtl" class="btn-floating halfway-fab waves-effect waves-light red btn-large"><i class="material-icons">add</i></a>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-        </div>
-      </div>
-    </div>
+<main class="texto"> 
+<div class="container">
+<div class="justificar">
+  <h2>3.2.3 DOCUMENTACIÓN DE REQUERIMENTOS Y PROCESOS</h2>
+  <span>Documentación</span>
+  <p>La documentación de un proyecto es de vital importancia para su éxito.
+Ya desde la fase de diseño, como parte de la propia arquitectura
+del proyecto, deberemos definir y escoger el sistema de documentación
+que usaremos para el proyecto, teniendo en cuenta factores
+como los siguientes:
+<ol style="list-style-type: circle;">
+  <li>Formatos de los documentos, según su tipología y métodos de acceso.
+Deberemos definir los formatos y plantillas elegidos para los
+diagramas de diseño, hojas de cálculo, hojas de seguimiento del
+proyecto, documentos que registren fallos o cambios en las especificaciones
+durante el desarrollo, documentos que definan la interfaz
+de usuario, etc. </li>
+  <li>Método de acceso y flujo de trabajo de cada tipo de documento.
+Quién va a tener acceso a los diferentes tipos de documentos y
+bajo qué privilegios. Dónde se van a notificar los cambios que se
+realicen (¿en el propio documento?, ¿en un sistema de control de
+versiones?).</li>
+</ol>
+En el caso de la documentación del propio desarrollo (del código
+fuente del proyecto), conviene estudiar las herramientas que nos
+ofrezca el propio lenguaje para generar la documentación, ya que
+en muchos casos existen herramientas de generación de documentación
+a partir del código fuente y comentarios insertados mediante
+una sintaxis determinada que van a ayudar mucho en el proceso. 
+<br>
+En el momento de tomar decisiones de formato y flujos de trabajo
+sobre la documentación, es de vital importancia tener en cuenta los
+estándares de formatos de documento existentes, evitando los formatos
+propietarios sobre todo en organizaciones heterogéneas donde
+convivan distintos sistemas operativos o en proyectos de software
+libre, para dar a la documentación la mayor accesibilidad posible.
+Suele ser una buena decisión escoger un formato de documentación
+fácilmente convertible a otros (p.ej., XML) y así poder disponer de la
+documentación en HTML para su consulta rápida, en PDF para agregar
+a la documentación del proyecto, etc.
+</p>
 
 
+</div>
+<div class="row center">
+  <div class="col s12 m6">
+    <a  href="tema22.html" class="waves-effect waves-light btn-large red darken-1"><i class="material-icons left">fast_rewind</i>Regresar al tema anterior</a>
   </div>
-
+  <div class="col s12 m6">
+    <a  href="tema24.html" class="waves-effect waves-light btn-large red darken-1"><i class="material-icons left">fast_forward</i>Ir al siguiente tema</a>  
   </div>
-
+</div>
+</div>
 </main>
 <!--Termina info página-->
 
