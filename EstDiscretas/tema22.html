@@ -57,6 +57,23 @@ Existen nueve nombres posibles para las 10 personas. Si se piensa en las persona
 palomas y en los nombres como los palomares, se puede considerar que la asignación
 de nombres a personas es lo mismo que asignar palomares a las palomas. Por el principio
 del palomar, algún nombre (palomar) se asigna al menos a dos personas (palomas).</p>
+<!--EJERCICIO 1--> 
+    <h5>Ejercicio 1</h5>
+    <p>Diez personas tienen nombres de pila Alicia, Bernardo y Carlos y apellidos López, Maza y
+Noriega. Demuestre que al menos dos personas tienen el mismo nombre y apellido.
+    </p>
+    <a id="boton" class="waves-effect waves-light btn red" onclick="divLogin()"><i class="material-icons left">visibility</i>Paso 1</a>
+    <a id="boton2" class="waves-effect waves-light btn red" onclick="divLogin()"><i class="material-icons left">visibility</i>Paso 2</a>
+    <div id="caja" style="display: none;">
+      Existen nueve nombres posibles para las 10 personas. Si se piensa en las personas como
+palomas y en los nombres como los palomares, se puede considerar que la asignación
+de nombres a personas es lo mismo que asignar palomares a las palomas. 
+    </div>
+    <div id="caja2" style="display: none;">
+    Por el principio
+del palomar, algún nombre (palomar) se asigna al menos a dos personas (palomas).
+  </div>
+
 <h4>Principio de palomar, segunda forma</h4>
 <p>
 Si f es una función de un conjunto finito X a un conjunto finito Y y |X| > |Y|, entonces
@@ -76,12 +93,72 @@ X, se asignan al mismo palomar; es decir, f(x1
 .
 Los siguientes ejemplos ilustran la aplicación de la segunda forma del principio del
 palomar.</p>
+<!--EJERCICIO 2--> 
+<h5>Ejercicio 2</h5>
+<p>
+Si 20 procesadores están interconectados, demuestre que al menos dos de ellos tienen conexión
+directa al mismo número de procesadores
+</p>
+<a id="boton3" class="waves-effect waves-light btn red" onclick="divLogin()"><i class="material-icons left">visibility</i>Paso 1</a>
+<a id="boton4" class="waves-effect waves-light btn red" onclick="divLogin()"><i class="material-icons left">visibility</i>Paso 2</a>
+<div id="caja3" style="display: none;">
+Denote los procesadores como 1, 2, . . . , 20. Sea ai el número de procesadores a los
+que el procesador i está conectado directamente. Debe demostrarse que ai = aj para alguna
+i diferente de j. El dominio de la función a es X = {1,2, . . . , 20} y el recorrido o imagen Y es un
+subconjunto de {0,1, . . . , 19}. Por desgracia, |X| = {0,1, . . . , 19} y no es posible usar
+de inmediato la segunda forma del principio del palomar.
+  
 </div>
+<div id="caja4" style="display: none;">
+  Se examinará la situación con más detalle. Observe que no se puede tener ai = 0, para
+alguna i, y aj = 19 para alguna j, porque se tendría un procesador (el i-ésimo procesador)
+sin conectar a otro procesador y, al mismo tiempo, otro procesador (el j-ésimo)
+conectado a todos los otros procesadores (incluso el i-ésimo). Entonces, el recorrido Y
+es un subconjunto ya sea de {0,1, . . . , 18} o bien de {1,2, . . . , 19}. En cualquier caso,
+|Y| < 20 = |X|. Por la segunda forma del principio del palomar, ai = aj para alguna i diferente de 
+j, como se desea.
+</div>
+<br>
+<h4>Principio de palomar, tercera forma</h4>
+<p>Sea f una función de un conjunto finito X a un conjunto finito Y. Suponga que |X| = n
+y |Y| = m. Sea k = [n/m]. Entonces hay al menos k valores a1
+, . . . , ak ∈ X tal que <br><center>f(a1)=f(a2)=...=f(ak)</center></p>
+</div>
+<!--EJERCICIO 3--> 
+<h5>Ejercicio 3</h5>
+<p>
+Una característica útil de las fotografías en blanco y negro es el brillo promedio de la foto.
+Digamos que dos fotos son similares si su brillo promedio difiere en no más de un valor fijo.
+Demuestre que entre seis fotografías, hay tres que son mutuamente similares o bien tres
+que son mutuamente no similares
+</p>
+<a id="boton5" class="waves-effect waves-light btn red" onclick="divLogin()"><i class="material-icons left">visibility</i>Paso 1</a>
+<a id="boton6" class="waves-effect waves-light btn red" onclick="divLogin()"><i class="material-icons left">visibility</i>Paso 2</a>
+<div id="caja5" style="display: none;">
+Denote las fotografías por P1
+, P2
+, . . . , P6
+. Cada uno de los cinco pares <br> <center>(P1, P2), (P1, P3), (P1, P4), (P1, P5), (P1, P6),</center>
+tiene el valor “similar” o “no similar”. Por la tercera forma del principio del palomar, hay
+al menos ⎡5/2⎤ = 3 pares con el mismo valor; es decir, hay tres pares <br> <center>(P1, Pi), (P1, Pj), (P1, Pk )</center>
+</div>
+<div id="caja6" style="display: none;">
+  todos similares o no similares. Suponga que cada par es similar. Si cualquier par <br>
+  <center>(Pi , Pj), (Pi , Pk ), (Pj , Pk )</center>
+es similar, entonces estas dos fotografías junto con P1 son mutuamente similares y se tienen
+tres fotografías mutuamente similares. De otra manera, cada uno de lo pares  es
+no similar y se tienen tres pares de fotografías mutuamente no similares.
+</div>
+<br>
+<br>
 <div class="row center">
-  <div class="col s12 m6">
+  <div class="col s12 m4">
     <a  href="tema21.html" class="waves-effect waves-light btn-large red darken-1"><i class="material-icons left">fast_rewind</i>Regresar al tema anterior</a>
   </div>
-  <div class="col s12 m6">
+    <div class="col s12 m4">
+    <a  href="teoria.html" class="waves-effect waves-light btn-large red darken-1"><i class="material-icons left">navigation</i>Ir teoría</a> 
+  </div>
+  <div class="col s12 m4">
     <a  href="tema23.html" class="waves-effect waves-light btn-large red darken-1"><i class="material-icons left">fast_forward</i>Ir al siguiente tema</a>  
   </div>
 </div>
@@ -94,7 +171,7 @@ palomar.</p>
           <div class="container ">
           <div class="footer-copyright center black">
             <div class="container">
-            © Ingeniería de Software 2017-2
+            © Estructuras Discretas 2017-2
             </div>
           </div>
         </footer>
@@ -103,4 +180,85 @@ palomar.</p>
   <script src="js/jquery-3.2.1.js"></script>  
   <script src="js/materialize.js"></script>
     <script src="js/app.js"></script>
+
+    <script>
+  var clic=1
+  $(document).ready(function(){
+   $("#boton").click(function(evento){
+    if (clic==1){
+     $("#caja").css("display", "block");
+     clic+=1;
+   }else{
+     $("#caja").css("display", "none");
+     clic=1;
+   }
+ });
+ });
+  var clic2=1
+  $(document).ready(function(){
+   $("#boton2").click(function(evento){
+    if (clic2==1){
+     $("#caja2").css("display", "block");
+     clic2+=1;
+   }else{
+     $("#caja2").css("display", "none");
+     clic2=1;
+   }
+ });
+ });
+
+  var clic3=1
+  $(document).ready(function(){
+   $("#boton3").click(function(evento){
+    if (clic3==1){
+     $("#caja3").css("display", "block");
+     clic3+=1;
+   }else{
+     $("#caja3").css("display", "none");
+     clic3=1;
+   }
+ });
+ });
+
+  var clic4=1
+  $(document).ready(function(){
+   $("#boton4").click(function(evento){
+    if (clic4==1){
+     $("#caja4").css("display", "block");
+     clic4+=1;
+   }else{
+     $("#caja4").css("display", "none");
+     clic4=1;
+   }
+ });
+ });
+
+  var clic5=1
+  $(document).ready(function(){
+   $("#boton5").click(function(evento){
+    if (clic5==1){
+     $("#caja5").css("display", "block");
+     clic5+=1;
+   }else{
+     $("#caja5").css("display", "none");
+     clic5=1;
+   }
+ });
+ });
+
+  var clic6=1
+  $(document).ready(function(){
+   $("#boton6").click(function(evento){
+    if (clic6==1){
+     $("#caja6").css("display", "block");
+     clic6+=1;
+   }else{
+     $("#caja6").css("display", "none");
+     clic6=1;
+   }
+ });
+ });
+  
+</script>
+
 </html>

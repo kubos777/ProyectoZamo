@@ -26,15 +26,133 @@
 <div class="container">
 <div class="justificar">
   <h2>2.6.7 FUNCIONES GENERADORAS Y RELACIONES DE CONCURRENCIA.</h2>
+  <span>Funciones generadoras</span> <br>
 
+<p>La resolución de problemas combinatorios no es una cuestión sencilla, pues no parecen existir métodos
+directos de resolución. Cada problema aparenta ser distinto a los demás, a pesar de que se resuelvan utilizando
+las mismas herramientas. Con el ánimo de introducir métodos más o menos directos, aparecen las funciones
+generadoras que se revelan como una técnica de gran utilidad a la hora de resolver problemas de distribuciones
+con restricciones. <br>
+Sea a0, a1, a2, . . . una sucesión de números reales. Llamamos función generadora de la
+sucesión {an}n≥0 a una función G(x) tal que:
+<center><img src="img/fg1.png" alt="Función generadora"></center> <br>
+La función generadora de la sucesión {an}n≥0 debe entenderse como una forma alternativa de representarla.
+En este sentido, no debemos preocuparnos por la convergencia de la serie
+</p>
+<!--EJERCICIO 1--> 
+    <h5>Ejercicio 1</h5>
+    <p>Determina el total de enteros entre 1 y 1 000 000 tales que la suma de sus cifras sea igual a
+15
+    </p>
+    <a id="boton" class="waves-effect waves-light btn red" onclick="divLogin()"><i class="material-icons left">visibility</i>Paso 1</a>
+    <a id="boton2" class="waves-effect waves-light btn red" onclick="divLogin()"><i class="material-icons left">visibility</i>Paso 2</a>
+    <div id="caja" style="display: none;">
+      Podemos ver los enteros entre 1 y 1 000 000 como los números de 6 dígitos que pueden empezar
+por 0. En este sentido uno de tales números puede escribirse como <br>
+<center>c1c2c3c4c5c6.</center> <br> Sus cifras sumarán 15 cuando se cumpla <br>
+<center>c1 + c2 + c3 + c4 + c5 + c6 = 15,</center> <br> siendo cada uno de los cj un número comprendido entre 0 y 9. Es decir, los posibles valores que
+pueden tomar cada uno de los cj son 0, 1, 2, 3, 4, 5, 6, 7, 8 ó 9. <br>Por tanto, asignamos a cada uno de los 6 elementos que se combina la serie: <br>
+<center><img src="img/fg2.png" alt=""></center>
+    </div>
+    <div id="caja2" style="display: none;">
+   
+El resultado del problema será el coeficiente de x^15 en G(x)^6.
+Ahora bien, G(x) puede escribirse como: <br>
+<center><img src="img/fg3.png" alt=""></center> por lo que :<br>
+<center><img src="img/fg4.png" alt=""></center> Aplicando el Teorema del binomio para desarrollar (1 − x
+10)^6, encontramos que el coeficiente de x^15 es:<br>
+<center><img src="img/fg5.png" alt=""></center>  que es el resultado pedido.
+
+   </div>
+<br>
+<span>Relaciones de concurrencia</span>
+<p>Una relación de recurrencia para la sucesión a0
+, a1
+, . . . es una ecuación que relaciona an
+con ciertos predecesores a0
+, a1
+, . . . , an−1
+.
+Las condiciones iniciales para una sucesión a0
+, a1
+, . . . son valores dados en forma
+explícita para un número finito de términos de la sucesión. <br>
+Resolver una relación de recurrencia que implica una sucesión a0
+, a1
+, . . . significa encontrar
+una fórmula explícita para el término general an
+. En esta sección se estudian dos métodos
+para resolver relaciones de recurrencia: el de iteraciones y un método especial que se aplica
+a relaciones de recurrencia homogéneas lineales con coeficientes constantes. 
+</p>
+<!--EJERCICIO 1--> 
+    <h5>Ejercicio 2</h5>
+    <p><h5>Crecimiento de población</h5>
+Suponga que la población de venados en el condado Rustic es 1000 en el tiempo n = 0 y
+que el aumento entre el tiempo n − 1 y el tiempo n es un 10% del tamaño en el tiempo
+n − 1. Escriba una relación de recurrencia y una condición inicial que defina la población
+de venados en el tiempo n y después resuelva la relación de recurrencia.
+    </p>
+    <a id="boton" class="waves-effect waves-light btn red" onclick="divLogin()"><i class="material-icons left">visibility</i>Paso 1</a>
+    <a id="boton2" class="waves-effect waves-light btn red" onclick="divLogin()"><i class="material-icons left">visibility</i>Paso 2</a>
+    <div id="caja" style="display: none;">
+      Sea dn la población de venados en el tiempo n. Se tiene la condición inicial
+d0 = 1000.
+El incremento del tiempo n − 1 al tiempo n es dn − dn−1
+. Como este incremento es el 10%
+del tamaño en el tiempo n − 1, se obtiene la relación de recurrencia
+<br> <center>dn − dn−1 = 0.1dn−1,</center>
+que se escribe como <br> <center>dn = 1.1dn−1.</center>
+    </div>
+    <div id="caja2" style="display: none;">
+    Es posible resolver la relación de recurrencia mediante iteraciones: <br>
+    <center>  
+    dn = 1.1dn−1 = 1.1(1.1dn−2) = (1.1)^2
+(dn−2) 
+</center> <br>
+<center>
+  =···= (1.1)^n(d0) = (1.1)^n(1000).
+  </center>
+La suposiciones implican un crecimiento de población exponencial</div>
+
+</div> <br>
+<!--EJERCICIO 1--> 
+    <h5>Ejercicio 3</h5>
+    <p>
+    Encuentre una fórmula explícita para cn
+, el número mínimo de movimientos en que se puede
+resolver el juego de la Torre de Hanoi con n discos <br>
+<center>cn = 2cn−1 + 1</center> y la condición inicial <br>
+<center>c1 = 1.</center>
+
+    </p>
+    <a id="boton3" class="waves-effect waves-light btn red" onclick="divLogin()"><i class="material-icons left">visibility</i>Paso 1</a>
+    <a id="boton4" class="waves-effect waves-light btn red" onclick="divLogin()"><i class="material-icons left">visibility</i>Paso 2</a>
+    <div id="caja3" style="display: none;">
+      Aplicando el método iterativo a la ecuación , se obtiene
+<br> <center>cn = 2cn−1 + 1</center>
+<br> <center>= 2(2cn−2 + 1) + 1</center>
+<br> <center>= 2^2cn−2 + 2 + 1</center>
+<br> <center>= 2^2(2cn−3 + 1) + 2 + 1</center>
+<br> <center>= 2^3cn−3 + 2^2 + 2 + 1</center>
+<br> <center>.</center>
+<br> <center>.</center>
+<br> <center>.</center>
+
+    </div>
+    <div id="caja4" style="display: none;">
+    <br> <center>= 2^(n−1)c1 + 2^(n−2) + 2^(n−3) +···+ 2 + 1</center>
+<br> <center>= 2^(n−1) + 2^(n−2) + 2^(n−3) +···+ 2 + 1</center>
+<br> <center>= 2^n − 1.</center>
 
 </div>
+<br><br>
 <div class="row center">
   <div class="col s12 m6">
     <a  href="tema22.html" class="waves-effect waves-light btn-large red darken-1"><i class="material-icons left">fast_rewind</i>Regresar al tema anterior</a>
   </div>
   <div class="col s12 m6">
-    <a  href="teoria.html" class="waves-effect waves-light btn-large red darken-1"><i class="material-icons left">fast_forward</i>Ir a teoría</a>  
+    <a  href="teoria.html" class="waves-effect waves-light btn-large red darken-1"><i class="material-icons left">navigation</i>Ir a teoría</a>  
   </div>
 </div>
 </div>
@@ -46,7 +164,7 @@
           <div class="container ">
           <div class="footer-copyright center black">
             <div class="container">
-            © Ingeniería de Software 2017-2
+            © Estructuras Discretas 2017-2
             </div>
           </div>
         </footer>
@@ -55,4 +173,83 @@
   <script src="js/jquery-3.2.1.js"></script>  
   <script src="js/materialize.js"></script>
     <script src="js/app.js"></script>
+    <script>
+  var clic=1
+  $(document).ready(function(){
+   $("#boton").click(function(evento){
+    if (clic==1){
+     $("#caja").css("display", "block");
+     clic+=1;
+   }else{
+     $("#caja").css("display", "none");
+     clic=1;
+   }
+ });
+ });
+  var clic2=1
+  $(document).ready(function(){
+   $("#boton2").click(function(evento){
+    if (clic2==1){
+     $("#caja2").css("display", "block");
+     clic2+=1;
+   }else{
+     $("#caja2").css("display", "none");
+     clic2=1;
+   }
+ });
+ });
+
+  var clic3=1
+  $(document).ready(function(){
+   $("#boton3").click(function(evento){
+    if (clic3==1){
+     $("#caja3").css("display", "block");
+     clic3+=1;
+   }else{
+     $("#caja3").css("display", "none");
+     clic3=1;
+   }
+ });
+ });
+
+  var clic4=1
+  $(document).ready(function(){
+   $("#boton4").click(function(evento){
+    if (clic4==1){
+     $("#caja4").css("display", "block");
+     clic4+=1;
+   }else{
+     $("#caja4").css("display", "none");
+     clic4=1;
+   }
+ });
+ });
+
+  var clic5=1
+  $(document).ready(function(){
+   $("#boton5").click(function(evento){
+    if (clic5==1){
+     $("#caja5").css("display", "block");
+     clic5+=1;
+   }else{
+     $("#caja5").css("display", "none");
+     clic5=1;
+   }
+ });
+ });
+
+  var clic6=1
+  $(document).ready(function(){
+   $("#boton6").click(function(evento){
+    if (clic6==1){
+     $("#caja6").css("display", "block");
+     clic6+=1;
+   }else{
+     $("#caja6").css("display", "none");
+     clic6=1;
+   }
+ });
+ });
+  
+</script>
 </html>

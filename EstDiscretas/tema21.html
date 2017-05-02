@@ -5,53 +5,327 @@
   <link rel="stylesheet" href="css/materialize.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Delius" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Magra" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Delius" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Magra" rel="stylesheet">
   <title>Tutorial Zamo</title>
 
 </head>
 <body>
-<!--Barra de navegación-->
+  <!--Barra de navegación-->
   <nav>
     <div class="nav-wrapper black">
-        <a href="index.html" class="brand-logo"><img src="img/est-log.png" alt="Logo FI" width="80px" height="90px"></a>
+      <a href="index.html" class="brand-logo"><img src="img/est-log.png" alt="Logo FI" width="80px" height="90px"></a>
       <a href="index.html" data-activates="mobile-demo" ></a>
-            
+
     </div>
   </nav>
-<!--Fin barra de navegación-->
-<!--Info página-->
-<main class="texto"> 
-<div class="container">
-<div class="justificar">
-	<h2>2.6.5 TEORÍA DE CONTEO</h2>
-	
+  <!--Fin barra de navegación-->
+  <!--Info página-->
+  <main class="texto"> 
+    <div class="container">
+      <div class="justificar">
+       <h2>2.6.5 TEORÍA DE CONTEO</h2>
+       <p>La teoría de conteo se basa en técnicas que nos proporcionan información de todas las maneras posibles en que ocurre un determinado evento, como son las combinaciones permutaciones y el diagrama de árbol.</p>  
+       <span>Diagramas de árbol</span><br>
+       <p>
+        Un diagrama de árbol es una herramienta utilizada para determinar todos los posibles resultados de un experimento aleatorio. <br>
+        <a href="multimedia.html">Vea el vídeo de cómo construir un diagrama de árbol</a>
+      </p>
+      <span>Permutaciones</span><br>
+      <p>
+       Genéricamente, permutar es: “variar la disposición u orden en que estaban
+       dos o más cosas”. Es necesario precisar si estas cosas son o no indistinguibles,
+       para asegurar que la nueva configuración sea en esencia distinta a
+       la antigua.<br>
+       <h5>Permutaciones ordinarias o sin repetición</h5>
+       Se llaman
+       permutaciones ordinarias o sin repetición de n elementos, denotaremos Pn,
+       a los distintos grupos que se pueden formar, de tal manera que en cada grupo
+       entren los n elementos y que un grupo se diferencie de los demás en el orden
+       de colocación de los elementos. Además se tiene que: 
+       Pn = n!.
+       <h5>Permutaciones con repetición</h5>
+       Se llaman permutaciones
+       con repetici´on de n elementos, distribuidos en k grupos de a1, a2,
+       ..., ak−1, ak elementos indistinguibles, respectivamente, de tal forma que
+       a1 + a2 + ... + ak−1 + ak = n, a las distintas configuraciones que se pueden
+       formar con los n elementos, de tal forma que cada una de ellas se diferencie
+       de las dem´as en el orden de colocaci´on de sus elementos, excluyendo las
+       reordenaciones de elementos indistinguibles (esto es, que pertenecen a un
+       mismo grupo). Si se denota por:
+       <center>  
+        <img src="img/per1.png" alt="Permutación 1">  
+      </center>
+      a este número, se tiene
+      que:
+    </p>
+    <center>  
+      <img src="img/per2.png" alt="Permutación 2">  
+    </center>
+    <!--EJERCICIO 1--> 
+    <h5>Ejercicio 1</h5>
+    <p>Un grupo de 5 personas va a sentarse en fila
+      para una foto. ¿Cuántas disposiciones lineales
+      son posibles? 
+      <center>
+        <img src="img/ej1.png" alt="Ej1">
+      </center>
+    </p>
+    <a id="boton" class="waves-effect waves-light btn red" onclick="divLogin()"><i class="material-icons left">visibility</i>Paso 1</a>
+    <a id="boton2" class="waves-effect waves-light btn red" onclick="divLogin()"><i class="material-icons left">visibility</i>Paso 2</a>
+    <div id="caja" style="display: none;">
+      Cualquiera de las 5 personas puede ocupar la
+      primera posición de la fila. Para la segunda
+      posición podemos elegir entre 4 personas.
+      Continuando de esta manera, sólo tenemos
+      una persona para ocupar la quinta posición.
+      Esto produce un total de 5.4.3.2.1 = 120
+      disposiciones posibles de las 5 personas. Se
+      obtiene exactamente la misma respuesta si
+      las posiciones se ocupan en otro orden (por
+      ejemplo, 3ª posición, 1ª posición, 4ª, 5ª y 2ª). 
+    </div>
+    <div id="caja2" style="display: none;">En general, si existen n objetos distintos, el
+      número de permutaciones para los n objetos
+      es:<center>
+      <img src="img/ej12.png" alt="Ej12">
+    </center>
+    Pn = n!
+    Se lee "permutaciones de n".
+  </div>
+  <!--EJERCICIO 2--> 
+  <h5>Ejercicio 2</h5>
+  <p>Con las cifras 2, 2, 2, 3, 3, 3, 3, 4, 4; ¿cuántos números de nueve cifras se pueden formar?
+  </p>
+  <a id="boton7" class="waves-effect waves-light btn red" onclick="divLogin()"><i class="material-icons left">visibility</i>Paso 1</a>
+  <a id="boton8" class="waves-effect waves-light btn red" onclick="divLogin()"><i class="material-icons left">visibility</i>Paso 2</a>
+  <div id="caja7" style="display: none;">
+  Análisis: <br>
+    m = 9     a = 3     b = 4     c = 2     a + b + c = 9
+    <ul>
+      <li>Sí entran todos los elementos.</li>
+
+      <li>Sí importa el orden.</li>
+
+      <li>Sí se repiten los elementos.</li>
+    </ul>
+  </div>
+  <div id="caja8" style="display: none;">
+Aplicando la formúla:
+  <center>
+    <img src="img/ej2r.gif" alt="Ej2">
+  </center>
+Se pueden formar 1260 números de nueve cifras.
 </div>
+<br><br>
+<span>Combinaciones</span><br>
+<p>
+  En lenguaje común, combinar es: “unir cosas diversas, de manera que
+  formen un compuesto”. Al igual que las permutaciones, el
+  concepto de combinación tiene un significado muy concreto en matemáticas:
+  brevemente, número de conjuntos de un determinado número de elementos
+  que se pueden formar con un universo de objetos, sin importar el orden de
+  selección, sino qué elementos se toman.
+  <h5>Combinaciones sin repetición</h5>
+  Se llaman combinaciones
+  ordinarias o sin repetición de n elementos, tomados de k en k, denotaremos
+  Cn,k, a los diferentes conjuntos de k elementos distintos, esto es, un
+  conjunto se diferencie de los demás en, al menos, un elemento (no importa el orden de colocación o selección). Se tiene:
+  <center>
+    <img src="img/comb1.png" alt="Combinaciones 1">
+  </center>
+  <h5>Combinaciones con repetición</h5> 
+  Se llaman combinaciones
+  con repeticióon de n elementos, tomados de k en k, se denota CRn,k, a las
+  diferentes agrupaciones de k elementos (indistinguibles o no), de tal forma
+  que una agrupación se diferencie de las demás en, al menos, un elemento
+  (no importa el orden de colocación o selección). Se tiene: 
+  <center>
+    <img src="img/comb2.png" alt="Combinaciones 1">
+  </center>
+</p>
+
+<!--EJERCICIO 3--> 
+<h5>Ejercicio 3</h5>
+<p>Dadas las letras a,b,c. ¿Cuántas combinaciones pares sin repetir se pueden formar, y cuáles son? 
+
+</p>
+<a id="boton3" class="waves-effect waves-light btn red" onclick="divLogin()"><i class="material-icons left">visibility</i>Paso 1</a>
+<a id="boton4" class="waves-effect waves-light btn red" onclick="divLogin()"><i class="material-icons left">visibility</i>Paso 2</a>
+<div id="caja3" style="display: none;">
+
+  Aplicando la formúla, dónde n es el número de elementos que tenemos y r el tamaño de las combinaciones:
+  <center>
+    <img src="img/ej2.png" alt="Ej2">
+  </center>
+</div>
+<div id="caja4" style="display: none;">
+  Existen 3 combinaciones de tamaño 2.
+  Las 3 combinaciones son: <br>
+  <ol>
+    <li>a b</li>
+    <li> a c</li>
+    <li>b c</li>
+  </ol>
+
+</div>
+<br><br>
+<!--EJERCICIO 4--> 
+<h5>Ejercicio 4</h5>
+<p>En una bodega hay en un cinco tipos diferentes de botellas. ¿De cuántas formas se pueden elegir cuatro botellas?
+</p>
+<a id="boton5" class="waves-effect waves-light btn red" onclick="divLogin()"><i class="material-icons left">visibility</i>Paso 1</a>
+<a id="boton6" class="waves-effect waves-light btn red" onclick="divLogin()"><i class="material-icons left">visibility</i>Paso 2</a>
+<div id="caja5" style="display: none;">
+  Análisis del problema:
+  <ul style="list-style: circle;">
+   <li> No entran todos los elementos. Sólo elije 4.</li>
+
+   <li>No importa el orden. Da igual que elija 2 botellas de anís y 2 de ron, que 2 de ron y 2 de anís.</li>
+
+   <li>Sí se repiten los elementos. Puede elegir más de una botella del mismo tipo.</li>
+ </ul>
+</div>
+<div id="caja6" style="display: none;">
+  <center>
+    <img src="img/ej3.gif" alt="Ej3">
+  </center>
+  De 70 formas se pueden elegir 4 botellas.
+</div>
+<!--FIN CONTENIDO-->
+</div>
+<br><br>  
 <div class="row center">
 	<div class="col s12 m6">
 		<a  href="teoria.html" class="waves-effect waves-light btn-large red darken-1"><i class="material-icons left">fast_rewind</i>Regresar a teoría</a>
 	</div>
-	<div class="col s12 m6">
-		<a  href="tema22.html" class="waves-effect waves-light btn-large red darken-1"><i class="material-icons right">fast_forward</i>Ir al siguiente tema</a>	
-	</div>
-</div>
+  <div class="col s12 m6">
+    <a  href="tema22.html" class="waves-effect waves-light btn-large red darken-1"><i class="material-icons right">fast_forward</i>Ir al siguiente tema</a> 
+  </div>
 </div>
 </main>
 <!--Termina info página-->
 
 <!--Footer adhesivo-->
-        <footer class="page-footer black ffooter">
-          <div class="container ">
-          <div class="footer-copyright center black">
-            <div class="container">
-            © Ingeniería de Software 2017-2
-            </div>
-          </div>
-        </footer>
-<!--Termina footer-->
+<footer class="page-footer black ffooter">
+  <div class="container ">
+    <div class="footer-copyright center black">
+      <div class="container">
+        © Estructuras Discretas 2017-2
+      </div>
+    </div>
+  </footer>
+  <!--Termina footer-->
 </body>
-  <script src="js/jquery-3.2.1.js"></script>  
-  <script src="js/materialize.js"></script>
-    <script src="js/app.js"></script>
+<script src="js/jquery-3.2.1.js"></script>  
+<script src="js/materialize.js"></script>
+<script src="js/app.js"></script>
+
+
+<script>
+  var clic=1
+  $(document).ready(function(){
+   $("#boton").click(function(evento){
+    if (clic==1){
+     $("#caja").css("display", "block");
+     clic+=1;
+   }else{
+     $("#caja").css("display", "none");
+     clic=1;
+   }
+ });
+ });
+  var clic2=1
+  $(document).ready(function(){
+   $("#boton2").click(function(evento){
+    if (clic2==1){
+     $("#caja2").css("display", "block");
+     clic2+=1;
+   }else{
+     $("#caja2").css("display", "none");
+     clic2=1;
+   }
+ });
+ });
+
+  var clic3=1
+  $(document).ready(function(){
+   $("#boton3").click(function(evento){
+    if (clic3==1){
+     $("#caja3").css("display", "block");
+     clic3+=1;
+   }else{
+     $("#caja3").css("display", "none");
+     clic3=1;
+   }
+ });
+ });
+
+  var clic4=1
+  $(document).ready(function(){
+   $("#boton4").click(function(evento){
+    if (clic4==1){
+     $("#caja4").css("display", "block");
+     clic4+=1;
+   }else{
+     $("#caja4").css("display", "none");
+     clic4=1;
+   }
+ });
+ });
+
+  var clic5=1
+  $(document).ready(function(){
+   $("#boton5").click(function(evento){
+    if (clic5==1){
+     $("#caja5").css("display", "block");
+     clic5+=1;
+   }else{
+     $("#caja5").css("display", "none");
+     clic5=1;
+   }
+ });
+ });
+
+  var clic6=1
+  $(document).ready(function(){
+   $("#boton6").click(function(evento){
+    if (clic6==1){
+     $("#caja6").css("display", "block");
+     clic6+=1;
+   }else{
+     $("#caja6").css("display", "none");
+     clic6=1;
+   }
+ });
+ });
+  var clic7=1
+  $(document).ready(function(){
+   $("#boton7").click(function(evento){
+    if (clic7==1){
+     $("#caja7").css("display", "block");
+     clic7+=1;
+   }else{
+     $("#caja7").css("display", "none");
+     clic7=1;
+   }
+ });
+ });
+
+  var clic8=1
+  $(document).ready(function(){
+   $("#boton8").click(function(evento){
+    if (clic8==1){
+     $("#caja8").css("display", "block");
+     clic8+=1;
+   }else{
+     $("#caja8").css("display", "none");
+     clic8=1;
+   }
+ });
+ });
+</script>
+
+
 </html>

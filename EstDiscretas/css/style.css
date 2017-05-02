@@ -74,17 +74,17 @@ ul>li.active a{
 }
 .tituloTarjeta{
     font-size: 75px;
+    color:black;
 }
-.textoTarjeta{
-   font-size: 35px;
-}
+
 .texto{
   font-family: 'Magra', sans-serif;
   font-size: 20px;
 }
 span{
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
+  color: black;
 }
 .titulo{
   font-family: 'Magra', sans-serif;
@@ -92,3 +92,8 @@ span{
   text-align: center;
   font-weight: bold;  
 }
+.textoTarjeta{
+   font-size: 45px;
+}
+
+
