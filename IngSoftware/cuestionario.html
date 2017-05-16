@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <script src="js/preguntas.js" type="text/javascript" charset="utf-8"></script>
-  <title>Tutorial Zamo</title>
+  <title>Cuestionario</title>
 
 </head>
 <body>
@@ -645,7 +645,24 @@
                       calif++;
 
                   //alert("Tu calificacion es: "+calif);
+                  nueveyDiez="¡Excelente sigue así!"
+                  ochoySiete="¡Tú puedes mejorar!"
+                  seisyCinco="¡Intentalo de nuevo, tú puedes!"
+                  if(calif>=9){
                   document.getElementById("res").innerHTML = calif;
+                  alert(nueveyDiez);
+                  }
+                  if(calif==8 || calif==7){
+                  document.getElementById("res").innerHTML = calif;
+                  alert(ochoySiete);
+                  }
+                  if(calif<=6){
+                  document.getElementById("res").innerHTML = calif;
+                  alert(seisyCinco);
+                  }
+                  
+
+
                   $('#pres').show();
 
                   
